@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Application - UEAB</title>
+</head>
+
+<body>
+ <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About us</a> |
+            <a href="programmes.html">Programmes</a> |
+            <a href="services.html">Services</a> |
+            <a href="application.html">Application</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+        <br><br>
+
+
+    <h1>Student Application Form</h1>
+
+    <p>
+        Please complete the form below to apply for admission
+        to the University of Eastern Africa, Baraton.
+    </p>
+
+    <form>
+
+        <!-- TEXT FIELD -->
+        <h2>Personal Information</h2>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"
+               placeholder="Enter your full name" required>
+
+        <br><br>
+
+
+        <!-- EMAIL -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"
+               placeholder="example@email.com" required>
+
+        <br><br>
+
+
+        <!-- TELEPHONE -->
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="0712345678" required>
+
+        <br><br>
+
+
+        <!-- DATE -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <br><br>
+
+
+        <!-- RADIO BUTTONS -->
+        <h2>Gender</h2>
+
+        <label>
+            <input type="radio" name="gender" value="male">
+            Male
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="female">
+            Female
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="prefer_not_to_say">
+            Prefer not to say
+        </label>
+
+        <br><br>
+
+
+        <!-- DROPDOWN LIST -->
+        <h2>Academic Information</h2>
+
+        <label for="programme">Choose Programme:</label>
+
+        <select id="programme" name="programme">
+
+            <option value="">-- Select Programme --</option>
+            <option value="computer-science">Computer Science</option>
+            <option value="information-technology">
+                Information Technology
+            </option>
+            <option value="business">
+                Business Administration
+            </option>
+            <option value="nursing">Nursing</option>
+            <option value="education">Education</option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- SECOND DROPDOWN -->
+        <label for="level">Study Level:</label>
+
+        <select id="level" name="level">
+
+            <option value="">-- Select Level --</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+            <option value="certificate">Certificate</option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- CHECKBOXES -->
+        <h2>Areas of Interest</h2>
+
+        <p>Select the areas you are interested in:</p>
+
+        <label>
+            <input type="checkbox" name="interest" value="sports">
+            Sports
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="interest" value="music">
+            Music
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="interest" value="technology">
+            Technology
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="interest" value="research">
+            Research
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="interest" value="community-service">
+            Community Service
+        </label>
+
+        <br><br>
+
+
+        <!-- TEXTAREA -->
+        <h2>Additional Information</h2>
+
+        <label for="message">
+            Tell us anything else about your application:
+        </label>
+
+        <br>
+
+        <textarea id="message" name="message"
+                  rows="6" cols="50"
+                  placeholder="Write your message here..."></textarea>
+
+        <br><br>
+
+
+        <!-- BUTTONS -->
+        <button type="submit">Submit Application</button>
+
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+</html>
